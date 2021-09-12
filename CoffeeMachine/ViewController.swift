@@ -6,56 +6,63 @@
 //
 
 import UIKit
+
+enum coffeeMachine {
+    case esspresso, americano, latte, capuchino
+    
+    var coffeeNeeded: Double {
+        switch self {
+        case .esspresso:
+            return 10.0
+        case .americano:
+            return 20.0
+        case .latte:
+            return 10.0
+        case .capuchino:
+            return 10.0
+        }   
+    }
+    
+    var milkNeeded: Double {
+        switch self {
+        case .esspresso:
+            return 0.0
+        case .americano:
+            return 0.0
+        case .latte:
+            return 300.0
+        case .capuchino:
+            return 200.0
+        }
+    }
+    
+    var waterNeeded: Double {
+        switch self {
+        case .esspresso:
+            return 35.0
+        case .americano:
+            return 120.0
+        case .latte:
+            return 35.0
+        case .capuchino:
+            return 35.0
+        }
+    }
+    
     
     class ViewController: UIViewController {
         
-        @IBOutlet weak var textLabel: UILabel!
-        let machine = CoffeeMachine()
         override func viewDidLoad() {
             super.viewDidLoad()
             
-        
         }
         
-        
-        @IBAction func addMilkButton(_ sender: UIButton) {
-            machine.addMilk()
-            textLabel.text = machine.textField
-        }
-        @IBAction func garbageCleanButton(_ sender: UIButton) {
-            machine.clearGarbage()
-            textLabel.text = machine.textField
-        }
-        @IBAction func addCoffeeButton(_ sender: UIButton) {
-            machine.addCoffee()
-            textLabel.text = machine.textField
-        }
-        @IBAction func addWaterButton(_ sender: UIButton) {
-            machine.addWater()
-            textLabel.text = machine.textField
-        }
-        
-        @IBAction func makeCapuchinoButton(_ sender: UIButton) {
-            machine.makeDrink(drink: .capuchino)
-            textLabel.text = machine.textField
-        }
-        @IBAction func makeLatteButton(_ sender: UIButton) {
-            machine.makeDrink(drink: .latte)
-            textLabel.text = machine.textField
-        }
-        @IBAction func makeEsspressoButton(_ sender: UIButton) {
-            machine.makeDrink(drink: .esspresso)
-            textLabel.text = machine.textField
-        }
-        @IBAction func makeAmericanoButton(_ sender: UIButton) {
-            machine.makeDrink(drink: .americano)
-            textLabel.text = machine.textField
-        }
         
     }
-
     
-
     
-
+        
+    }
+    
+    
 

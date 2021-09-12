@@ -1,188 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-qi-Bj4">
-                                <rect key="frame" x="20" y="309" width="100" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="cVv-4T-0gS"/>
-                                    <constraint firstAttribute="height" constant="50" id="i1t-rJ-LZS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add Coffee"/>
-                                <connections>
-                                    <action selector="addCoffeeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcB-In-c5C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-F8-rhp">
-                                <rect key="frame" x="20" y="369" width="93" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="2e1-eo-BaB"/>
-                                    <constraint firstAttribute="height" constant="50" id="eha-Yn-skb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add Water"/>
-                                <connections>
-                                    <action selector="addWaterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYd-bl-OQc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-VH-qJ3">
-                                <rect key="frame" x="332" y="309" width="76" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="W3c-Ie-ssX"/>
-                                    <constraint firstAttribute="width" constant="76" id="sQj-AU-nFz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add Milk"/>
-                                <connections>
-                                    <action selector="addMilkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAc-qg-2DR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTO-DV-XLq">
-                                <rect key="frame" x="277" y="369" width="131" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="8cu-JQ-M8E"/>
-                                    <constraint firstAttribute="width" constant="131" id="eTZ-Cf-pE3"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="ghm-ZA-Efa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Garbage Clean"/>
-                                <connections>
-                                    <action selector="garbageCleanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGv-sz-0zJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDb-QR-EzX">
-                                <rect key="frame" x="20" y="64" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="f0m-oq-bDt"/>
-                                    <constraint firstAttribute="width" constant="75" id="thd-Yd-ZZ5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" backgroundImage="2021-09-13 15.55.09"/>
-                                <connections>
-                                    <action selector="makeEsspressoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I57-vG-wro"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sp-Dg-J6e">
-                                <rect key="frame" x="20" y="214" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="3Ic-Gw-dwz"/>
-                                    <constraint firstAttribute="height" constant="75" id="ysU-BR-3A7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" backgroundImage="2021-09-13 15.55.18"/>
-                                <connections>
-                                    <action selector="makeCapuchinoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EaJ-c9-alG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19q-di-R1K">
-                                <rect key="frame" x="333" y="64" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="FZf-iK-h5z"/>
-                                    <constraint firstAttribute="height" constant="75" id="jji-5Q-QdC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" backgroundImage="2021-09-13 15.55.13"/>
-                                <connections>
-                                    <action selector="makeAmericanoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7X9-mF-S1g"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-YQ-9v3">
-                                <rect key="frame" x="139" y="144" width="150" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qbq-YQ-9v3" secondAttribute="height" multiplier="3:1" id="ARp-6r-qrb"/>
-                                    <constraint firstAttribute="width" constant="150" id="iKe-zK-uMw"/>
-                                    <constraint firstAttribute="height" constant="50" id="nZd-st-Pze"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" name="AccentColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egM-La-Ym7">
-                                <rect key="frame" x="333" y="214" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="aFj-Mg-uAG"/>
-                                    <constraint firstAttribute="width" constant="75" id="z2U-ep-BdF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" backgroundImage="2021-09-13 15.55.21"/>
-                                <connections>
-                                    <action selector="makeLatteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8F-y2-xwf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoffeMachine-3000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZy-qd-RtY">
-                                <rect key="frame" x="89" y="429" width="250" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="1Hc-Ri-bsV"/>
-                                    <constraint firstAttribute="width" constant="250" id="TOo-nw-3nl"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="YPv-dg-SN4"/>
-                                    <constraint firstAttribute="height" constant="50" id="dug-M1-tiH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.30751499533653259" green="0.028462350368499756" blue="0.95319122076034546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6fU-qi-Bj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Sb-CC-bS2"/>
-                            <constraint firstItem="SZy-qd-RtY" firstAttribute="top" secondItem="fsw-F8-rhp" secondAttribute="bottom" constant="10" id="8zu-FV-m7v"/>
-                            <constraint firstItem="fUM-VH-qJ3" firstAttribute="top" secondItem="egM-La-Ym7" secondAttribute="bottom" constant="20" id="B8e-xD-5Zs"/>
-                            <constraint firstItem="egM-La-Ym7" firstAttribute="top" secondItem="qbq-YQ-9v3" secondAttribute="bottom" constant="20" id="GCN-dj-aKI"/>
-                            <constraint firstItem="SZy-qd-RtY" firstAttribute="centerX" secondItem="qbq-YQ-9v3" secondAttribute="centerX" id="GLV-Bw-e39"/>
-                            <constraint firstItem="qbq-YQ-9v3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="JAg-eH-2dS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="19q-di-R1K" secondAttribute="trailing" constant="20" id="Jbp-GM-cHf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUM-VH-qJ3" secondAttribute="trailing" constant="20" id="Kdd-qD-iLo"/>
-                            <constraint firstItem="fsw-F8-rhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N21-Zu-zEB"/>
-                            <constraint firstItem="qbq-YQ-9v3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PKu-4d-eDb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egM-La-Ym7" secondAttribute="trailing" constant="20" id="Pgy-Sw-Kfs"/>
-                            <constraint firstItem="fsw-F8-rhp" firstAttribute="top" secondItem="6fU-qi-Bj4" secondAttribute="bottom" constant="10" id="QNx-5E-dmR"/>
-                            <constraint firstItem="nDb-QR-EzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dCw-z5-EZU"/>
-                            <constraint firstItem="3Sp-Dg-J6e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dnv-PO-PEo"/>
-                            <constraint firstItem="19q-di-R1K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eH9-RR-oZ9"/>
-                            <constraint firstItem="RTO-DV-XLq" firstAttribute="top" secondItem="fUM-VH-qJ3" secondAttribute="bottom" constant="10" id="eqC-X6-FN3"/>
-                            <constraint firstItem="3Sp-Dg-J6e" firstAttribute="top" secondItem="qbq-YQ-9v3" secondAttribute="bottom" constant="20" id="esn-DV-OHb"/>
-                            <constraint firstItem="SZy-qd-RtY" firstAttribute="top" secondItem="fsw-F8-rhp" secondAttribute="bottom" constant="10" id="j8Q-ay-ssA"/>
-                            <constraint firstItem="6fU-qi-Bj4" firstAttribute="top" secondItem="3Sp-Dg-J6e" secondAttribute="bottom" constant="20" id="tNq-pi-xPo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RTO-DV-XLq" secondAttribute="trailing" constant="20" id="wHs-cg-k7a"/>
-                            <constraint firstItem="nDb-QR-EzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="x1U-KW-2iE"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="textLabel" destination="qbq-YQ-9v3" id="t9Y-iw-mbq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.14953271028037" y="53.131749460043203"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="2021-09-13 15.55.09" width="185" height="151"/>
-        <image name="2021-09-13 15.55.13" width="183" height="151"/>
-        <image name="2021-09-13 15.55.18" width="181" height="159"/>
-        <image name="2021-09-13 15.55.21" width="183" height="160"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
