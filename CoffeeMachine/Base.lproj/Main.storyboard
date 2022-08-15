@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-VH-qJ3">
-                                <rect key="frame" x="440" y="309" width="76" height="50"/>
+                                <rect key="frame" x="332" y="309" width="76" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="W3c-Ie-ssX"/>
                                     <constraint firstAttribute="width" constant="76" id="sQj-AU-nFz"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTO-DV-XLq">
-                                <rect key="frame" x="385" y="369" width="131" height="50"/>
+                                <rect key="frame" x="277" y="369" width="131" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="8cu-JQ-M8E"/>
                                     <constraint firstAttribute="width" constant="131" id="eTZ-Cf-pE3"/>
@@ -91,7 +91,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19q-di-R1K">
-                                <rect key="frame" x="441" y="64" width="75" height="75"/>
+                                <rect key="frame" x="333" y="64" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="FZf-iK-h5z"/>
                                     <constraint firstAttribute="height" constant="75" id="jji-5Q-QdC"/>
@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-YQ-9v3">
-                                <rect key="frame" x="139" y="293" width="150" height="50"/>
+                                <rect key="frame" x="139" y="144" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qbq-YQ-9v3" secondAttribute="height" multiplier="3:1" id="ARp-6r-qrb"/>
                                     <constraint firstAttribute="width" constant="150" id="iKe-zK-uMw"/>
@@ -114,7 +114,7 @@
                                 <color key="highlightedColor" name="AccentColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egM-La-Ym7">
-                                <rect key="frame" x="441" y="214" width="75" height="75"/>
+                                <rect key="frame" x="333" y="214" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="aFj-Mg-uAG"/>
                                     <constraint firstAttribute="width" constant="75" id="z2U-ep-BdF"/>

@@ -109,7 +109,7 @@ class CoffeeMachine {
                         textField = "Here is your \(drink) please."
                     } else {
                         print("Clean the garbageTank please")
-                        textField = "Clean the garbageTank please"
+                        textField = "Clean the garbage please"
                     }
                 } else {
                     print("Need more milk, fill it up!")
